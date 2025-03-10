@@ -43,6 +43,36 @@
       .navbar a:hover {
         background-color: limegreen;
       }
+
+      /* Dropdown Styling */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: darkgreen;
+        min-width: 160px;
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+      }
+
+      .dropdown-content a:hover {
+        background-color: limegreen;
+      }
     </style>
   </head>
   <body>
@@ -50,7 +80,14 @@
     <div class="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
+      <!-- Dropdown for Projects -->
+      <div class="dropdown">
+        <a href="projects.html">Projects</a>
+        <div class="dropdown-content">
+          <a href="Unit2.html">Unit 2</a>
+          <a href="Unit3.html">Unit 3</a>
+        </div>
+      </div>
       <a href="contact.html">Contact</a>
     </div>
 
