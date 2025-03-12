@@ -40,8 +40,52 @@
         border-radius: 8px;
       }
 
+      /* Navigation Bar Styling */
+      .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: darkgreen;
+        padding: 20px; /* Increased padding for a taller navbar */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 30px; /* Increased padding for more space around the links */
+        margin: 0 15px; /* Increased margin between the links */
+        font-size: 20px; /* Larger font size */
+        transition: background-color 0.3s ease;
+      }
+
+      .navbar a:hover {
+        background-color: limegreen;
+        border-radius: 5px;
+      }
+
+      /* Content Styling */
+      .content {
+        margin-top: 120px; /* Increased space for fixed navbar */
+        padding: 20px;
+        text-align: center;
+        max-width: 900px;
+        width: 100%;
+      }
+
       /* Make sure it looks good on mobile */
       @media screen and (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+        }
+
+        .navbar a {
+          padding: 15px;
+          font-size: 18px;
+        }
+
         iframe {
           width: 90%; /* Adjust width on smaller screens */
           height: 400px; /* Adjust height on smaller screens */
@@ -54,12 +98,22 @@
     </style>
   </head>
   <body>
-    <h1>Zero Hunger Project</h1>
-    <h2>In this Python project, I learned more about the 2nd global goal "Zero Hunger," its statistics, and how we can achieve it.</h2>
-    
-    <iframe src="https://academy.cs.cmu.edu/sharing/redAnt7742/embed"></iframe>
-    
-    <h3>Below are some of my code snippets from the project:</h3>
-    <img src="media/CodeScreenshot2" alt="Code screenshot from the Zero Hunger Project">
+    <!-- Navigation Menu -->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Unit2.html">Unit 2</a>
+      <a href="Unit3.html">Unit 3</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Zero Hunger Project</h1>
+      <h2>In this Python project, I learned more about the 2nd global goal "Zero Hunger," its statistics, and how we can achieve it.</h2>
+      
+      <iframe src="https://academy.cs.cmu.edu/sharing/redAnt7742/embed"></iframe>
+      
+      <h3>Below are some of my code snippets from the project:</h3>
+      <img src="media/CodeScreenshot2" alt="Code screenshot from the Zero Hunger Project">
+    </div>
   </body>
 </html>
