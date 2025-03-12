@@ -1,25 +1,116 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger Project</title>
     <style>
-      body{
-        background: linear-gradient(to top, seagreen,darkgreen,green,limegreen,limegreen,green,darkgreen,seagreen);
-      color: pink;
-      text-align: center;
-      display:grid;
-      place-items: center;
+      body {
+        background: linear-gradient(to top, seagreen, darkgreen, green, limegreen, limegreen, green, darkgreen, seagreen);
+        color: pink;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-    }  
+      h1 {
+        margin-top: 20px;
+      }
+
+      h2, h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+      }
+
+      iframe {
+        max-width: 100%;
+        height: auto;
+        border: none;
+        margin-top: 20px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 8px;
+      }
+
+      /* Navigation Bar Styling */
+      .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: darkgreen;
+        padding: 10px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        margin: 0 10px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+
+      .navbar a:hover {
+        background-color: limegreen;
+        border-radius: 5px;
+      }
+
+      /* Content Styling */
+      .content {
+        margin-top: 80px; /* Space for fixed navbar */
+        padding: 20px;
+        text-align: center;
+        max-width: 900px;
+        width: 100%;
+      }
+
+      /* Make sure it looks good on mobile */
+      @media screen and (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+        }
+
+        .navbar a {
+          padding: 10px;
+          font-size: 16px;
+        }
+
+        h1, h2, h3 {
+          font-size: 1em;
+        }
+      }
     </style>
   </head>
-<body>
-  <h1>Zero Hunger Project</h1>
-  <h2>In this python project I learned more about 2 nd global goal "Zero Hunger", few more about this problem it's statistics and how can we achieve it</h2>
- <iframe width="410" height="460"
-   src="https://academy.cs.cmu.edu/sharing/redAnt7742/embed"> 
- </iframe>
-  <h3>Below is some of my code snippets from the project.</h3>
-  <img src="media/CodeScreenshot2">
-</body>  
+  <body>
+    <!-- Navigation Menu -->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Unit2.html">Unit 2</a>
+      <a href="Unit3.html">Unit 3</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Zero Hunger Project</h1>
+      <h2>In this Python project, I learned more about the 2nd global goal "Zero Hunger," its statistics, and how we can achieve it.</h2>
+      
+      <iframe width="410" height="460" src="https://academy.cs.cmu.edu/sharing/redAnt7742/embed"></iframe>
+      
+      <h3>Below are some of my code snippets from the project:</h3>
+      <img src="media/CodeScreenshot2" alt="Code screenshot from the Zero Hunger Project">
+    </div>
+  </body>
 </html>
+
 
 
