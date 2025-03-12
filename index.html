@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,92 +12,54 @@
         display: grid;
         place-items: center;
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
       }
 
       h1, h2, h3 {
         margin: 10px;
       }
 
-      img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 15px;
-      }
-
-      /* Navigation Bar Styling */
-      .navbar {
-        display: flex;
-        justify-content: center;
-        background-color: darkgreen;
-        padding: 10px;
-        width: 100%;
-      }
-
-      .navbar a {
+      /* Styling for the button */
+      .project-button {
+        background-color: limegreen;
         color: white;
-        text-decoration: none;
-        padding: 15px;
-        margin: 0 10px;
+        border: none;
+        padding: 15px 30px;
         font-size: 18px;
-      }
-
-      .navbar a:hover {
-        background-color: limegreen;
-      }
-
-      /* Dropdown Styling */
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: darkgreen;
-        min-width: 160px;
-        z-index: 1;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown-content a {
-        color: white;
-        padding: 12px 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-top: 20px;
+        transition: all 0.3s ease;
         text-decoration: none;
-        display: block;
-        font-size: 16px;
       }
 
-      .dropdown-content a:hover {
-        background-color: limegreen;
+      .project-button:hover {
+        background-color: darkgreen;
+        transform: scale(1.1);
       }
+
+      .project-button:focus {
+        outline: none;
+        box-shadow: 0 0 5px limegreen;
+      }
+
+      /* Mobile Responsiveness */
+      @media screen and (max-width: 768px) {
+        .project-button {
+          font-size: 16px;
+          padding: 12px 24px;
+        }
+      }
+
     </style>
   </head>
   <body>
-    <!-- Navigation Menu -->
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <!-- Dropdown for Projects -->
-      <div class="dropdown">
-        <a href="projects.html">Projects</a>
-        <div class="dropdown-content">
-          <a href="Unit2.html">Unit 2</a>
-          <a href="Unit3.html">Unit 3</a>
-        </div>
-      </div>
-      <a href="contact.html">Contact</a>
-    </div>
-
     <h1>Daniyal's Portfolio</h1>
     <h2>My CS Portfolio: Dropping Beats, Wrestling Feats, and Coding Treats!</h2>
-    <img src="media/splashscreen.png" alt="Splash Screen">
-    <h3>I created the above splashscreen in Python. I created the "Zero Hunger" and the "Climate Actions" projects.</h3>
-    <h3>Below are some of my code snippets from the projects.</h3>
-    <img src="media/CodeScreenshot.png" alt="Code Screenshot 1">
-    <img src="media/AnotherScreenshot.png" alt="Code Screenshot 2">
+    
+    <!-- Button to Switch Projects -->
+    <a href="Unit2.html" class="project-button">Go to Unit 2</a>
+    <a href="Unit3.html" class="project-button">Go to Unit 3</a>
   </body>
 </html>
